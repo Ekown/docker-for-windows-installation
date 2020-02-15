@@ -8,6 +8,12 @@ virtualization enable on your machine.
 
 ## Installation
 
+### Downloading Docker for Windows
+
+This installation only works for an older version of Docker for Windows (2.1.0.5)
+
+Download this specific version [here](https://download.docker.com/win/stable/40693/Docker%20Desktop%20Installer.exe)
+
 ### Enable Docker for Windows even when you are on Windows 10 edition
 
 1. Run the ```InstallHyperV.bat``` file in Administration mode. After the installation, it will prompt you to restart. Enter ```N```.
