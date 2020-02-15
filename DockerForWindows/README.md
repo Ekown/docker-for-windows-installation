@@ -18,21 +18,23 @@ virtualization enable on your machine.
 
 Ok great! Now that we have Hyper-V and Containers installed, it is time to trick Docker that we are running on Windows Pro.
 
-4. Press ```Windows + R``` and write ```regedit```.
+### Tricking Docker for Windows that you have a Pro version of Windows installed
 
-5. In the Registry Editor, go to ```\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion```.
+1. Press ```Windows + R``` and write ```regedit```.
 
-6. Right-click on **EditionID** and Click **Modify** (Note: Paste the old value here for backup: <>).
+2. In the Registry Editor, go to ```\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion```.
 
-7. Change Value Data to ```Professional```.
+3. Right-click on **EditionID** and Click **Modify** (Note: Paste the old value here for backup: <>).
 
-8. Press **OK**. (Note: If you restart your computer, the **EditionID** will be reset and you have to set it again).
+4. Change Value Data to ```Professional```.
 
-9. You can resume the installation of the Docker for Windows. If prompted, choose to run on Windows containers for now.
+5. Press **OK**. (Note: If you restart your computer, the **EditionID** will be reset and you have to set it again).
 
-10. After the successful installation, revert back the **EditionID** to its previous value that you have backed up or just restart your machine.
+6. You can resume the installation of the Docker for Windows. If prompted, choose to run on Windows containers for now.
 
-11. Toggle the experimental flag from ```false``` to ```true``` in the Docker Settings.
+7. After the successful installation, revert back the **EditionID** to its previous value that you have backed up or just restart your machine.
+
+8. Toggle the experimental flag from ```false``` to ```true``` in the Docker Settings.
 
 Based on a post found [here](https://itnext.io/install-docker-on-windows-10-home-d8e621997c1d)
 
