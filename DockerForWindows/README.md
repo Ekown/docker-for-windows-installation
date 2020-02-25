@@ -30,7 +30,7 @@ Ok great! Now that we have Hyper-V and Containers installed, it is time to trick
 
 2. In the Registry Editor, go to ```\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion```.
 
-3. Right-click on **EditionID** and Click **Modify** (Note: Paste the old value here for backup: <>).
+3. Right-click on **EditionID** and Click **Modify**.
 
 4. Change Value Data to ```Professional```.
 
